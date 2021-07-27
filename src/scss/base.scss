@@ -1,0 +1,83 @@
+// @include font-face("gilroy", "../assets/fonts/GilroyRegular/GilroyRegular");
+// @include font-face("gilroy", "../assets/fonts/GilroyBold/GilroyBold", bold);
+
+// @include font-face("augustus", "../assets/fonts/AugustusRegular/AugustusRegular");
+
+*::selection {
+    background: $color-accent;
+    color: white;
+}
+
+*::-moz-selection {
+    background: $color-accent;
+    color: white;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    
+    min-width: 320px;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: $d-font;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 124%;
+    color: $color-text;
+
+    background-color: $color-bg;
+}
+
+.container {
+    width: auto;
+    max-width: 1920px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: $viewport--md) {
+	.container {
+        width: 500px;
+    }
+}
+
+@media (min-width: $viewport--xl) {
+    body {
+        font-size: 14px;
+        line-height: 124%;
+    }
+
+    .container {
+        width: auto;
+    }
+}
