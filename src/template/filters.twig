@@ -1,0 +1,44 @@
+<form class="catalog__filters filters" method="GET">
+    <div class="filters__legend">
+        <label class="filters__checkbox checkbox">
+            <input type="radio" name="count" value="1">
+            <span class="checkbox__value">1к</span>
+        </label>
+        <label class="filters__checkbox checkbox">
+            <input type="radio" name="count" value="2">
+            <span class="checkbox__value">2к</span>
+        </label>
+        <label class="filters__checkbox checkbox">
+            <input type="radio" name="count" value="3" checked>
+            <span class="checkbox__value">3к</span>
+        </label>
+        <label class="filters__checkbox checkbox">
+            <input type="radio" name="count" value="4">
+            <span class="checkbox__value">4к</span>
+        </label>
+    </div>
+    <div class="filters__range range">
+        <p class="range__label">Стомость квартиры, ₽</p>
+        <ul class="range__list">
+            <li>от <span class="range__value">5 500 000</span></li>
+            <li>до <span class="range__value">18 900 000</span></li>
+        </ul>
+        <div class="range__slider" id="range-cost"></div>
+    </div>
+    <div class="filters__range range">
+        <p class="range__label">Площадь, м<sup>2</sup></p>
+        <ul class="range__list">
+            <li>от <span class="range__value">33</span></li>
+            <li>до <span class="range__value">123</span></li>
+        </ul>
+        <div class="range__slider" id="range-area"></div>
+    </div>
+    <div class="filters__wrapper">
+        <button class="filters__reset-btn" type="button" id="reset">
+            Сбросить параметры
+            <svg>
+                <use xlink:href="assets/img/icons/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</form>

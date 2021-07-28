@@ -27,7 +27,7 @@ const syncserver = () => {
     gulp.watch('src/**/*.{twig, json}', gulp.series(html, refresh));
     gulp.watch('src/scss/**/*.{scss,sass}', gulp.series(css));
     gulp.watch('src/js/**/*.{js,json}', gulp.series(js, refresh));
-    gulp.watch('build/assets/svg/*.svg', gulp.series(svg));
+    gulp.watch('build/assets/img/svg/*.svg', gulp.series(svg));
 }
 
 const html = () => {
@@ -89,11 +89,11 @@ const refresh = (done) => {
 };
 
 const svg = () => {
-	return gulp.src('build/assets/svg/*.svg')
+	return gulp.src('build/assets/img/svg/*.svg')
 		.pipe(svgsprite({
             mode: {stack: {sprite: '../sprite.svg'}}
         }))
-		.pipe(gulp.dest('build/assets/icons'));
+		.pipe(gulp.dest('build/assets/img/icons'));
 };
 
 // Оптимизация изображений

@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="application-name" content="">
-    <meta name="msapplication-TileColor" content="">
-    <meta name="theme-color" content="">
-    <link rel="shortcut icon" href="assets/img/favicon/fav.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/img/favicon/fav.png" type="image/png">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Главная</title>
-</head>
+{% include 'template/head.twig' %}
 <body>
-    <header>
+    <main class="catalog container">
 
-    </header>
-    <main>
+        {% include 'template/filters.twig' %}
+        {% include 'template/content.twig' %}
 
+        <button class="catalog__scroll-top" type="button" style="display: none">
+            <span class="visually-hidden">Вверх</span>
+            <svg>
+                <use xlink:href="assets/img/icons/sprite.svg#scroll-top"></use>
+            </svg>
+        </button>
     </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/libs/jq-ui-touch-punch.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
     <script src="js/main.min.js"></script>
 </body>
 </html>

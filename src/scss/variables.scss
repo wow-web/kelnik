@@ -1,21 +1,19 @@
 // Viewports
 
 $viewport--sm:  320px;
-$viewport--md:  768px;
+$viewport--md:  960px;
 $viewport--lg:  1024px;
-$viewport--xl:  1280px;
+$viewport--xl:  1440px;
 $viewport--xxl: 1920px;
 
 
 // Colors
 
-$color-bg:      #010302;
-$color-text:    #ffffff;
-$color-accent:  #eac05d;
-$color-gradient: linear-gradient(180deg, #FF4D34 0%, #EB371D 100%);
+$color-bg:      #ffffff;
+$color-text:    #0B1739;
+$color-green:   #3EB57C;
 
 
 // Fonts
 
-$d-font: 'gilroy', Arial, sans-serif;
-$f-font: 'augustus', serif;
+$default-font: 'pt-root', Arial, sans-serif;

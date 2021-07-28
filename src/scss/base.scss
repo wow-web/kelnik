@@ -1,15 +1,14 @@
-// @include font-face("gilroy", "../assets/fonts/GilroyRegular/GilroyRegular");
-// @include font-face("gilroy", "../assets/fonts/GilroyBold/GilroyBold", bold);
-
-// @include font-face("augustus", "../assets/fonts/AugustusRegular/AugustusRegular");
+@include font-face("pt-root", "../assets/fonts/PTRootUIRegular/PTRootUIRegular");
+@include font-face("pt-root", "../assets/fonts/PTRootUIMedium/PTRootUIMedium", 500);
+@include font-face("pt-root", "../assets/fonts/PTRootUIBold/PTRootUIBold", bold);
 
 *::selection {
-    background: $color-accent;
+    background: $color-green;
     color: white;
 }
 
 *::-moz-selection {
-    background: $color-accent;
+    background: $color-green;
     color: white;
 }
 
@@ -25,11 +24,11 @@ body {
     margin: 0px;
     padding: 0px;
 
-    font-family: $d-font;
-    font-size: 12px;
+    font-family: $default-font;
+    font-size: 14px;
     font-weight: normal;
     font-style: normal;
-    line-height: 124%;
+    line-height: 20px;
     color: $color-text;
 
     background-color: $color-bg;
@@ -37,10 +36,12 @@ body {
 
 .container {
     width: auto;
-    max-width: 1920px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
+    max-width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -65,19 +66,16 @@ img {
     height: auto;
 }
 
-@media (min-width: $viewport--md) {
-	.container {
-        width: 500px;
-    }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-@media (min-width: $viewport--xl) {
-    body {
-        font-size: 14px;
-        line-height: 124%;
-    }
-
-    .container {
-        width: auto;
-    }
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
